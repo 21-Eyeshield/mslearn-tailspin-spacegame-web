@@ -3,8 +3,8 @@
 # Ajouter des étapps exécutentdes tests, créent un package NuGet, déploient et plus encore :
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
-déclencheur :
-- principal
+trigger:
+- main
 
 pool :
   name: Default
