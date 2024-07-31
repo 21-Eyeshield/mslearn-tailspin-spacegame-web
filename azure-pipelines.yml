@@ -1,17 +1,17 @@
-# ASP.NET.Core
-# Build et.Test . ASP.NET . Projets principaux ciblant. NET. Core.
-# Ajouter des étapps exécutentdes tests, créent un package NuGet, déploient et plus encore :
+# ASP.NET Core
+# Build et Test ASP.NET . Projets principaux ciblant. NET. Core.
+# Ajouter des étapps exécutent des tests, créent un package NuGet, déploient et plus encore :
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
-trigger:
-- main
+déclencheur:
+- principal
 
 pool :
   name: Default
 
 variables:
-  buildConfiguration: .'Release'
+  buildConfiguration: 'Release'
 
 steps:
 - script: dotnet build -- configuration $(buildConfiguration)
-  displayName: 'dotnet .build .$(buildConfiguration)'
+  displayName: 'dotnet build $(buildConfiguration)'
