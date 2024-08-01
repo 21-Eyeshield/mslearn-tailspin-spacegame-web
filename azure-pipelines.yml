@@ -7,7 +7,7 @@ trigger:
 - principal
 
 pool :
-  name: Default
+  name: Azure Pipelines
 
 variables:
   buildConfiguration: 'Release'
